@@ -1,0 +1,54 @@
+{
+    "name": "rpgmaker-text",
+    "displayName": "rpgmaker-text",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "kido",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./extension",
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "contributes": {
+        "commands": [
+            {
+                "title": "Toggle",
+                "category": "rpgmaker-text",
+                "command": "rpgmakertext.toggle"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "RPGMaker Text",
+            "properties": {
+                "rpgmakertext.isEnable": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable or disable the highlight"
+                },
+                "rpgmakertext.highlightColor":{
+                    "type": "string",
+                    "default": "#2795EE",
+                    "description": "CSS Style Color"
+                }
+            }
+        }
+    },
+    "devDependencies": {
+        "typescript": "^2.5.2",
+        "vscode": "^1.1.5",
+        "mocha": "^3.5.0",
+        "eslint": "^4.6.1",
+        "@types/node": "^7.0.0",
+        "@types/mocha": "^2.2.42"
+    }
+}

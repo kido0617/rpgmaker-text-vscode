@@ -1,7 +1,7 @@
 {
     "name": "rpgmaker-text",
     "displayName": "rpgmaker-text",
-    "description": "",
+    "description": "RPGMaker bulk text input plugin",
     "version": "0.0.1",
     "publisher": "kido",
     "engines": {
@@ -50,5 +50,9 @@
         "eslint": "^4.6.1",
         "@types/node": "^7.0.0",
         "@types/mocha": "^2.2.42"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kido0617/rpgmaker-text-vscode"
     }
 }

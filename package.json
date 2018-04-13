@@ -2,8 +2,8 @@
     "name": "rpgmaker-text",
     "displayName": "rpgmaker-text",
     "description": "RPGMaker bulk text input plugin",
-    "version": "0.0.1",
-    "publisher": "kido",
+    "version": "0.0.2",
+    "publisher": "kido0617",
     "engines": {
         "vscode": "^1.15.0"
     },
